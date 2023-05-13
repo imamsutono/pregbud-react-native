@@ -1,6 +1,6 @@
 # PregBud
 
-Tulis di sini nama project yang kamu buat.
+Aplikasi pembantu ibu hamil.
 
 ## Deskripsi
 
@@ -37,12 +37,11 @@ Berikut adalah teknologi yang digunakan dalam project ini:
 - React Native
 - Expo
 - React Navigation
-- dll.
 
-## Kontributor
+## Kontributor (Team 1)
 
-Tulis di sini nama-nama orang yang turut berkontribusi dalam project kamu.
-
-## Lisensi
-
-Tulis di sini jenis lisensi yang kamu gunakan untuk project kamu (jika ada).
+- Imam Sutono
+- Yehezkiel Setianto Putra
+- Nurul Aulia Maysarah
+- Yudhistira Bagas Bimantara
+- Muhammad Farid Muslich
