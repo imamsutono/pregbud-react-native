@@ -18,11 +18,11 @@ const TabNavigator = () => {
           if (route.name === 'Details') {
             iconName = 'apps-outline';
           } else if (route.name === 'Doctor List') {
-            iconName = 'ios-people';
+            iconName = 'ios-people-outline';
           } else if (route.name === 'FAQ') {
-            iconName = 'ios-help-circle';
+            iconName = 'ios-help-circle-outline';
           } else if (route.name === 'Snap Up') {
-            iconName = 'ios-flash';
+            iconName = 'cart-outline';
           }
 
           return <Ionicons name={iconName} size={size} color={color} />;
