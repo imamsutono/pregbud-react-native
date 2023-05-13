@@ -16,7 +16,7 @@ const TabNavigator = () => {
           let iconName;
 
           if (route.name === 'Details') {
-            iconName = 'ios-information-circle';
+            iconName = 'apps-outline';
           } else if (route.name === 'Doctor List') {
             iconName = 'ios-people';
           } else if (route.name === 'FAQ') {
