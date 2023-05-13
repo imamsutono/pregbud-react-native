@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Image, FlatList, TouchableOpacity, StyleSheet, Alert } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-function DetailsScreen({ route, navigation }) {
+function DetailsScreen({ navigation }) {
   const data = [
     {
       id: 1,

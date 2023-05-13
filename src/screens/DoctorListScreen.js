@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, FlatList } from 'react-native';
+import { View, Text, Image, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
 
 const data = [
   {
@@ -28,15 +28,19 @@ const data = [
   },
 ];
 
-const DoctorListScreen = () => {
+const DoctorListScreen = ({ navigation }) => {
+  const bookAppointment = () => {
+    navigation.navigate('AppointmentStack');
+  };
+  
   const renderItem = ({ item }) => (
-    <View style={styles.card}>
+    <TouchableOpacity style={styles.card} onPress={bookAppointment}>
       <Image source={{ uri: item.image }} style={styles.image} />
       <View style={styles.cardText}>
         <Text style={styles.name}>{item.name}</Text>
         <Text style={styles.specialization}>{item.specialization}</Text>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 
   return (
