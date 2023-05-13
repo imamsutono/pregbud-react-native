@@ -1,31 +1,35 @@
 import React from 'react';
-import { View, Text, Image, FlatList, TouchableOpacity } from 'react-native';
+import { View, Text, Image, FlatList, TouchableOpacity, StyleSheet, Alert } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-function DetailsScreen() {
+function DetailsScreen({ route, navigation }) {
   const data = [
     {
       id: 1,
       title: 'Estrogen',
       subtitle: '120 pg/mL',
       normal: true,
-      image: 'https://picsum.photos/id/101/200/200',
+      image: 'https://d2jx2rerrg6sh3.cloudfront.net/image-handler/ts/20220214080221/ri/950/src/images/Article_Images/ImageForArticle_22114_16448437406713117.jpg',
     },
     {
       id: 2,
       title: 'Norepinephrine',
       subtitle: '90 mmHg',
       normal: true,
-      image: 'https://picsum.photos/id/102/200/200',
+      image: 'https://thumbs.dreamstime.com/z/norepinephrine-structural-chemical-formula-model-molecul-noradrenaline-organic-functions-brain-body-as-116477330.jpg',
     },
     {
       id: 3,
       title: 'Tingkat Glukosa',
       subtitle: '189 mg/dL',
       normal: false,
-      image: 'https://picsum.photos/id/103/200/200',
+      image: 'https://media.istockphoto.com/id/1092296428/id/vektor/glukosa-molekul-gula-anggur-alpha-glukosa-dan-beta-glukosa-formula-kimia-struktural-dan.webp?s=612x612&w=is&k=20&c=Rv0__arbiAUdtVRaCYvENMfMPrNYEIjqSAkHQsuUCzw=',
     },
-  ];  
+  ];
+
+  const onEdit = ({ title, image }) => {
+    navigation.navigate('EditStack', { title, image });
+  };
 
   const renderItem = ({ item }) => {
     return (
@@ -44,7 +48,7 @@ function DetailsScreen() {
             />
           </View>
         </View>
-        <TouchableOpacity style={{ backgroundColor: '#EF8C0B', borderRadius: 8, padding: 8 }}>
+        <TouchableOpacity style={styles.editButton} onPress={() => onEdit(item)}>
           <Text style={{ color: '#fff' }}>Edit</Text>
         </TouchableOpacity>
       </View>
@@ -61,5 +65,13 @@ function DetailsScreen() {
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  editButton: {
+    backgroundColor: '#EF8C0B',
+    borderRadius: 8,
+    padding: 8
+  }
+});
 
 export default DetailsScreen;
