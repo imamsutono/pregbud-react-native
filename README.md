@@ -14,12 +14,9 @@ Berikut adalah beberapa fitur yang tersedia di aplikasi ini:
 - FAQ: daftar pertanyaan yang sering ditanyakan terkait kehamilan, beserta jawaban-jawaban yang tepat.
 - Snap Up: daftar produk terkait kehamilan, yang dapat dibeli secara online.
 
-## Screenshots
+## Demo Aplikasi
 
-![details](./screenshots/details.png)
-![doctorlist](./screenshots/doctorlist.png)
-![faq](./screenshots/faq.png)
-![snapup](./screenshots/snapup.png)
+[![Demo PregBud](./screenshots/details.png)](./screenshots/demo-pregbud.mp4)
 
 ## Installation
 
