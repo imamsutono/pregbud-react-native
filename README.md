@@ -25,7 +25,7 @@ Berikut adalah langkah-langkah untuk menginstal project kamu:
 1. Clone repository ini.
 2. Buka terminal dan navigasi ke direktori project.
 3. Jalankan perintah `npm install` atau `yarn install`.
-4. Jalankan perintah `npm start` atau `yarn start`.
+4. Jalankan perintah `npx expo start`.
 
 ## Teknologi yang Digunakan
 
